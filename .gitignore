@@ -1,0 +1,22 @@
+# Ignore large data and databases
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.tar.gz
+*.k2d
+*.map
+*.distrib
+*.txt.files
+*.html.files
+
+# Ignore conda environment files
+*.lock
+*.yml
+.conda
+venv/
+.env/
+
+# Ignore system files
+.DS_Store
+*.swp

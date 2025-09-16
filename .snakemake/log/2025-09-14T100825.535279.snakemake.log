@@ -1,0 +1,26 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: mariposa
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job        count
+-------  -------
+all            1
+bracken        1
+kraken2        1
+krona          1
+total          4
+
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Sep 14 10:08:25 2025]
+localrule kraken2:
+    input: data/SRR507860_trimmed.fastq.gz
+    output: results/SRR507860_trimmed_kraken2_report.txt, results/SRR507860_trimmed_kraken2_out.txt
+    jobid: 2
+    reason: Missing output files: results/SRR507860_trimmed_kraken2_out.txt, results/SRR507860_trimmed_kraken2_report.txt
+    wildcards: sample=SRR507860_trimmed
+    resources: tmpdir=/tmp

@@ -1,0 +1,5 @@
+samples:
+  - SRR507860_trimmed
+
+kraken2_db: "/home/mariposa/databases"
+threads: 4
